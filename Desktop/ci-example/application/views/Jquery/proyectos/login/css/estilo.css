@@ -1,0 +1,13 @@
+body{
+	background:black;
+}
+#login{
+	margin:auto;
+	text-align:center;
+}
+input{
+	margin:0px;
+	padding:0px;
+	border:0px solid black;
+	height:20px;
+}

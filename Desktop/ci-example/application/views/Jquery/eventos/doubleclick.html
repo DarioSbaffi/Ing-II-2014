@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+			var x;
+			x=$("#hola");
+			x.dblclick(pulsar);
+			}
+			function pulsar(){
+				alert('Has hecho doble clic en el DIV');
+			}
+		</script>
+		<style type="text/css">
+	
+		</style>
+	</head>
+	<body>
+		<div id="hola">Pulsar</div>
+	</body>
+</html>

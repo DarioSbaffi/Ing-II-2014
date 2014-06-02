@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicio);
+
+			function inicio(){
+				var x;
+				x=$("#enviar");
+				x.click(calcular);
+			}
+			function calcular(){
+				var v=$("#numero").attr("value");
+				$.get("calculadora.php",{numero:v},recibir);
+				return false;
+			}
+			function recibir(datos){
+				alert(datos);
+			}
+		</script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		Multiplicar por 5 el siguiente numero 
+		
+		<form action="calculadora.php" method="get">
+		
+		<input type="text" id="numero" name="numero">
+		
+		<input type="submit" value="Enviar" id="enviar">
+				</form>
+				<div id="resultado"></id>
+	</body>
+</html>
