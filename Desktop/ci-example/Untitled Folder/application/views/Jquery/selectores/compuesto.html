@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(clickBoton);
+
+			function clickBoton(){
+				var x;
+				x=$("#boton");
+				x.click(ocultar);
+			}
+			function ocultar(){
+				var x;
+				x=$("#fruta li");
+				x.hide();
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" id="boton" value="Esconder frutas rojas">
+		<ul>
+			<li id="fruta" class="roja">Fresa</li>
+			<li id="fruta" class="naranja">Naranja</li>
+			<li id="verdura" class="roja">Tomate</li>
+			<li id="fruta" class="verde">Sandia</li>
+		</ul>
+	</body>
+</html>

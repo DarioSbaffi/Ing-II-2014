@@ -55,7 +55,8 @@ $(function(){
 											window.location = data.success_list_url;
 										} else {
 											$(".ui-dialog-content").dialog("close");
-											success_message(data.success_message);
+	//										success_message(data.success_message);
+											window.location = data.success_list_url;
 										}
 
 										return true;
@@ -96,13 +97,14 @@ $(function(){
 			return false;
 		});
 
+/* Estas lineas estan comentadas para evitar la confirmacion al realizar la cancelacion de un alta*/
 		if( $('#cancel-button').closest('.ui-dialog').length === 0 ) {
 
 			$('#cancel-button').click(function(){
-				if( confirm( message_alert_add_form ) )
-				{
-					window.location = list_url;
-				}
+		//		if( confirm( message_alert_add_form ) )
+	//			{
+				window.location = list_url;
+	//			}
 
 				return false;
 			});

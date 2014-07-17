@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" >
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x;
+				x=$("h1");
+				x.click(presionar);
+			}
+			function presionar(){
+				var x;
+				x=$(this);
+				x.css("font-size","12px");
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Yo soy un título</h1>
+		<p>Yo soy un parágrafo</p>
+		<h1>Yo soy un título</h1>
+		<p>Yo soy un parágrafo</p>
+		<h1>Yo soy un título</h1>
+		<p>Yo soy un parágrafo</p>
+		<h1>Yo soy un título</h1>
+		<p>Yo soy un parágrafo</p>
+	</body>
+</html>

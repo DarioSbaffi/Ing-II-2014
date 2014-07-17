@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x;
+				x=$("#hola");
+				x.hover(entraRaton,saleRaton);
+			}
+			function entraRaton(){
+				$(this).css("background-color","yellow");
+			}
+			function saleRaton(){
+				$(this).css("background-color","white");
+			}
+		</script>
+		<style type="text/css">
+			
+			
+		</style>
+	</head>
+	<body>
+		<div id="hola">Entras y sales</div>
+	</body>
+</html>

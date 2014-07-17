@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+var x;
+x=$(document);
+x.ready(inicio);
+
+function inicio(){
+	var x;
+	x=$("#input");
+	x.focus(enfocar);
+	x.blur(desenfocar);
+	x.keypress(tecla);
+	}
+	function enfocar(){
+		var x=$("#input");
+		x.attr("value","");
+		}
+	function desenfocar(){
+		var x=$("#input");
+		x.attr("value","Español - Alemán");
+	}
+	function tecla(){
+		$(".resultado").hide();
+		$.ajax({
+			type: 'POST',
+			url:$("form").attr('action'),
+			data: $("form").serialize(),
+			success: function(data){
+				$(".resultado").fadeIn("slow");
+				$(".resultado").html(data);
+				}
+			})
+		}
+	
+</script>
+<link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <form action="php/busca.php?lang=es" method="post"> 
+            <input type="text" name="termino" value="Español - Alemán" id="input">
+        </form>
+        
+        <div class="resultado">
+            
+        </div>
+    </div>
+</body>
+</html>

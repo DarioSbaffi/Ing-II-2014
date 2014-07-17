@@ -156,6 +156,7 @@ $(function(){
 					}
 					else
 					{
+						error_message("No se pudo eliminar el dato seleccionado");
 						error_message(data.error_message);
 
 					}

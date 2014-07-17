@@ -99,14 +99,14 @@ $(function(){
 		});
 		return false;
 	});
-
+/* Estas lineas estan comentadas para evitar la confirmacion al realizar la cancelacion de una edicion*/
 	if( $('#cancel-button').closest('.ui-dialog').length === 0 ) {
 
 		$('#cancel-button').click(function(){
-			if( $(this).hasClass('back-to-list') || confirm( message_alert_edit_form ) )
-			{
+//			if( $(this).hasClass('back-to-list') || confirm( message_alert_edit_form ) )
+//			{
 				window.location = list_url;
-			}
+//			}
 
 			return false;
 		});
