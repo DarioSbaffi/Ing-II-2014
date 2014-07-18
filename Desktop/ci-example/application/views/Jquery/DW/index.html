@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript" src="../jquery.js"></script>
+<script type="text/javascript">
+
+var x;
+x=$(document);
+x.ready(inicio);
+
+function inicio(){
+	var x = $("#boton");
+	x.click(rellena);
+	}
+function rellena(){
+	var x=$("#rellena");
+	x.text('Soy un texto');
+	}
+</script>
+</head>
+
+<body>
+<input type="button" id="boton" value="pulsame">
+<div id="rellena">
+</div>
+</body>
+</html>

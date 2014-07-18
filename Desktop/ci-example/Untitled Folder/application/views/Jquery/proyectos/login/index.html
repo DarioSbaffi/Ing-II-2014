@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jqueryui.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicio);
+
+			function inicio(){
+				var x=$("#login");
+				x.dialog({height:400, width:400});
+				var x=$("#boton");
+				x.button();
+				x.click(noentras);
+			}
+			function noentras(){
+				var x=$("#login");
+				x.effect("shake");
+			}
+		</script>
+		<link type="text/css" href="css/estilo.css" rel="stylesheet">
+		<link type="text/css" href="css/trontastic/jquery-ui-1.8.16.custom.css" rel="stylesheet">
+		
+	</head>
+	<body>
+		<div id="login" title="Login">
+			<input type="text" value="Usuario"><br>
+			<input type="text" value="Contrasena"><br>
+			<input type="submit" id="boton">
+		</div>
+	</body>
+</html>

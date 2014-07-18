@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+var x;
+x=$(document);
+x.ready(inicio);
+
+function inicio(){
+	x=$("#E");
+	x.click(acordeE);
+	x=$("#F");
+	x.click(acordeF);
+	x=$("#G");
+	x.click(acordeG);
+	}
+	
+	function acordeE(){
+		var x=$("#sexta");
+			x.mouseover(s6E);
+			x.mouseout(s6no);
+		var x=$("#quinta");
+			x.mouseover(s5B);
+			x.mouseout(s5no);
+		var x=$("#cuarta");
+			x.mouseover(s4E);
+			x.mouseout(s4no);
+		var x=$("#tercera");
+			x.mouseover(s3Gs);
+			x.mouseout(s3no);
+		var x=$("#segunda");
+			x.mouseover(s2B);
+			x.mouseout(s2no);
+		var x=$("#prima");
+			x.mouseover(s1E);
+			x.mouseout(s1no);
+		}
+	function s6E(){
+		var x=$("#sonidosexta");
+		x.html('<audio src="sonido/6E.ogg" autoplay="autoplay"></audio>');
+		var x=$(this);
+		x.css("background","url(img/string2.jpg)");
+		}
+	function s6no(){
+		var x=$(this);
+		x.css("background","url(img/string.jpg)");
+		}
+	function s5B(){
+		var x=$("#sonidoquinta");
+		x.html('<audio src="sonido/5B.ogg" autoplay="autoplay"></audio>');
+		var x=$(this);
+		x.css("background","url(img/string2.jpg)");
+		}
+	function s5no(){
+		var x=$(this);
+		x.css("background","url(img/string.jpg)");
+		}
+	function s4E(){
+		var x=$("#sonidocuarta");
+		x.html('<audio src="sonido/4E.ogg" autoplay="autoplay"></audio>');
+		var x=$(this);
+		x.css("background","url(img/string2.jpg)");
+		}
+	function s4no(){
+		var x=$(this);
+		x.css("background","url(img/string.jpg)");
+		}
+	function s3Gs(){
+		var x=$("#sonidotercera");
+		x.html('<audio src="sonido/3Gs.ogg" autoplay="autoplay"></audio>');
+		var x=$(this);
+		x.css("background","url(img/string2.jpg)");
+		}
+	function s3no(){
+		var x=$(this);
+		x.css("background","url(img/string.jpg)");
+		}
+	function s2B(){
+		var x=$("#sonidosegunda");
+		x.html('<audio src="sonido/2B.ogg" autoplay="autoplay"></audio>');
+		var x=$(this);
+		x.css("background","url(img/string2.jpg)");
+		}
+	function s2no(){
+		var x=$(this);
+		x.css("background","url(img/string.jpg)");
+		}
+	function s1E(){
+		var x=$("#sonidoprima");
+		x.html('<audio src="sonido/1E.ogg" autoplay="autoplay"></audio>');
+		var x=$(this);
+		x.css("background","url(img/string2.jpg)");
+		}
+	function s1no(){
+		var x=$(this);
+		x.css("background","url(img/string.jpg)");
+		}
+	
+</script>
+<link href="css/estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<input type="button" id="E" value="E">
+<input type="button" id="F" value="F">
+<input type="button" id="G" value="G">
+<div style="clear:both;"></div>
+<div id="tablatura">
+<div class="espacio"></div>
+<div class="cuerda" id="sexta"></div>
+<div class="espacio"></div>
+<div class="cuerda" id="quinta"></div>
+<div class="espacio"></div>
+<div class="cuerda" id="cuarta"></div>
+<div class="espacio"></div>
+<div class="cuerda" id="tercera"></div>
+<div class="espacio"></div>
+<div class="cuerda" id="segunda"></div>
+<div class="espacio"></div>
+<div class="cuerda" id="prima"></div>
+<div class="espacio"></div>
+</div>
+<div id="sonidos">
+<div id="sonidoprima"></div>
+<div id="sonidosegunda"></div>
+<div id="sonidotercera"></div>
+<div id="sonidocuarta"></div>
+<div id="sonidoquinta"></div>
+<div id="sonidosexta"></div>
+</div>
+
+</body>
+</html>

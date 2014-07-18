@@ -1,0 +1,20 @@
+/* CSS Document */
+body{
+	background:black;
+	}
+	.cuerda{
+		border:0px solid black;
+		width:3%;
+		height:400px;
+		float:left;
+		background:url(../img/string.jpg);
+		background-size:100% 100%;
+		box-shadow:0px 0px 20px 5px black;
+	}
+	.espacio{
+		background:url(../img/wood.jpg);
+		width:11%;
+		height:400px;
+		border:0px solid black;
+		float:left;
+		}

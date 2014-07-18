@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" href="../css/ui-lightness/jquery-ui-1.8.16.custom.css" rel="stylesheet" />	
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript" src="../jqueryui.js"></script>
+		<script type="text/javascript">
+			var x=$(document);
+			x.ready(inicio);
+			function inicio(){
+				var x=$("#grande");
+				x.resizable();
+			}
+		</script>
+		</script>
+		<style type="text/css">
+			#grande{
+				width:200px;
+				height:200px;
+				border:1px solid black;
+				background:grey;
+			}
+		</style>	
+	</head>
+	<body>
+		<div id="grande">
+		<h3>Titulo</h3>
+		<p>Paragrafo</p>
+		</div>
+		
+	</body>
+</html>
+

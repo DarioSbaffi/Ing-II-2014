@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<script type="text/javascript" src="../jquery.js"></script>
+		<script type="text/javascript">
+			var x;
+			x=$(document);
+			x.ready(inicializar);
+
+			function inicializar(){
+				var x=$("#boton1");
+				x.click(muestrahtml);
+			}
+			function muestrahtml(){
+				var x;
+				x=$("#formulario");
+				x.html('<form><input type="text"><input type="submit"></form>');
+			}
+		</script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+	<input type="button" id="boton1" value="Formulario">
+		Aqui irá el formulario
+		<div id="formulario"></div>
+	</body>
+</html>
